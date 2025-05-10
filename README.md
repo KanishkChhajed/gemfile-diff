@@ -1,61 +1,44 @@
-# gemfile-diff
-
-[![rubocop](https://github.com/r7kamura/gemfile-diff/actions/workflows/rubocop.yml/badge.svg)](https://github.com/r7kamura/gemfile-diff/actions/workflows/rubocop.yml)
-
-Custom action to check difference of 2 Gemfile.lock.
-
-If there is a difference, it outputs the ANSI-colored diff and terminates with exit code 1.
-
-## Usage
-
-```yaml
-# .github/workflows/gemfile-diff.yml
-name: gemfile-diff
-
-on:
-  pull_request:
-    paths:
-      - Gemfile.lock
-      - Gemfile-7-0.lock
-  push:
-    branches:
-      - main
-    paths:
-      - Gemfile.lock
-      - Gemfile-7-0.lock
-
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: r7kamura/gemfile-diff@v0
-        with:
-          gemfile_lock_a: Gemfile.lock
-          gemfile_lock_b: Gemfile-rails-7-0.lock
-          ignore:
-            actioncable
-            actionmailbox
-            actionmailer
-            actionpack
-            actiontext
-            actionview
-            activejob
-            activemodel
-            activerecord
-            activestorage
-            activesupport
-            digest
-            globalid
-            io-wait
-            mini_mime
-            net-imap
-            net-pop
-            net-protocol
-            net-smtp
-            rails
-            railties
-            scanf
-            strscan
-            timeout
-```
+<h1 align="center">
+    <img src="https://img.shields.io/badge/gemfile-diff-🎯-blueviolet?style=for-the-badge" alt="Repo Badge">
+  </h1>
+  
+  <p align="center">
+    <img src="https://avatars.githubusercontent.com/u/121193249?v=4" width="100" style="border-radius:50%;">
+  </p>
+  
+  ---
+  
+  ## 📖 About the Project
+  - **Repository Name:** gemfile-diff
+  - **Owner:** KanishkChhajed
+  - **Visibility:** public
+  - **Primary Language(s):** Ruby,Dockerfile,Shell
+  
+  ---
+  
+  ## 📊 Stats
+  
+  | Stars | Forks | Watchers | Open Issues | Closed Issues |
+  |:----:|:-----:|:--------:|:-----------:|:-------------:|
+  | 0 | 0 | 0 | 0 | 0 |
+  
+  ---
+  
+  ## 📢 Last Commit
+  
+  > "Adding my workflow for testing"
+  
+  ---
+  
+  ## 🤝 Contributors
+  
+  
+  - [`r7kamura`](#)
+  
+  - [`KanishkChhajed`](#)
+  
+  
+  ---
+  
+  > *Generated with ❤️ by an automated GitHub Action* 🚀
+  
